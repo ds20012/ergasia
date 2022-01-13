@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html  lang="eng">
+	<head>
+		<title>Announcements system website</title>
+		<link rel = "stylesheet" href = "front/style.css">
+	</head>
+	<script>
+	
+		function studentClk() {
+			window.location = "StudentPage.php";
+		}
+		
+	</script>
+	<body>
+		<div class="container">
+		  <header class="header">
+			<p>Welcome to Students annoucements site</p>
+		  </header>
+		  <section class="content">
+			<div class="content-body">
+			  <p>Please login if teacher</p>
+			  <form action = "back/TeacherPage.php" method = "get">
+				  <input type = "text" name = "teacher"> </input><br><br>
+				  <button type = "submit"> Login </button>
+			  </form>
+			  <br>
+			  <button type="button" onclick = "studentClk()"> I am a student </button>
+			</div>
+		  </section>
+		  <footer class="footer">
+			<p>Εργασία Ανάπτυξη εφαρμογών 2021</p>
+		  </footer>
+		</div>
+	</body>
+</html>
